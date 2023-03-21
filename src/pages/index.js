@@ -12,6 +12,8 @@ import PDF from "./Tuan_Resume_Stage.pdf";
 import Tilt from "react-parallax-tilt";
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
+const greetingTexts = ["Hi, thank you for visiting my website!", " with 4 years of experience working with a multitude of programming languages, software, and technologies.","Currently, I'm working towards my DEC in Computer Science, and I'm on track to graduate in May, 2023.", "          You can download a copy of my résumé below."]
+
 const IndexPage = () => {
   const onDownloadClick = () => {
     fetch(PDF).then((response) => {
@@ -83,7 +85,7 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
-        <div class="flex-col">
+        <div class="flex-col ml-10">
           <h3 class="font-black">
             <Typewriter
               options={{
@@ -98,17 +100,16 @@ const IndexPage = () => {
               options={{ strings: texts, autoStart: true, loop: true }}
             />
           </h4>
-          <p>Hi, thank you for visiting my website! My name's Tuan.</p>
-          <p>I am a Computer Science student based in Saint-Lambert, Québec</p>
-          <p>
-            with 4 years of experience working with a multitude of programming
-            languages, software, and technologies.
-          </p>
-          <p>
+          <div className="myIntro">
+            <Typewriter
+              options={{strings: "Hi, welcome to my website!\n I am a Computer Science student based in Saint-Lambert, Québec", autoStart: true}}
+            />
+
+{/*            
             Currently, I'm working towards my DEC in Computer Science, and I'm
-            on track to graduate in May, 2023.
-          </p>
-          <p>You can download a copy of my résumé below.</p>
+            on track to graduate in May, 2023. */}
+          </div>
+          <br/>
           <button
             class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-flex items-center"
             onClick={onDownloadClick}
