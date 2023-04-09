@@ -56,10 +56,7 @@ const ContactPage = () => {
 
       <h1 class="font-black">LET'S GET IN TOUCH</h1>
       <div class="flex-none">
-        <div class="flex flex-col">
-          <p>Email: anhtuanng47@gmail.com</p>
-          <p>Tele: 514-977-3537</p>
-        </div>
+
         <div class="flex justify-start">
           <form
             class="w-full max-w-lg"

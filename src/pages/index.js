@@ -101,13 +101,20 @@ const IndexPage = () => {
             />
           </h4>
           <div className="myIntro">
-            <Typewriter
-              options={{strings: "Hi, welcome to my website!\n I am a Computer Science student based in Saint-Lambert, Québec", autoStart: true}}
-            />
-
-{/*            
-            Currently, I'm working towards my DEC in Computer Science, and I'm
-            on track to graduate in May, 2023. */}
+            <p>
+            <Typewriter onInit={(tw) => 
+              tw.typeString("Hello, welcome to my website!<br/>")
+              .typeString("I am a CS student based in Saint-Lambert, Québec.<br/>")
+              .typeString("Currently, I'm working towards getting my DEC in Computer Science.<br/>")
+              .typeString("And I'm on track to graduate in May, 2023")
+              .pauseFor(2500)
+              .callFunction(() => {
+                console.log("Typed out strings!");
+              })
+              .start()
+            }
+          />
+            </p>
           </div>
           <br/>
           <button
