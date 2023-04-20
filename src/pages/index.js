@@ -199,7 +199,7 @@ const IndexPage = () => {
             />
           </h4>
           <p class="break-normal">
-            Whenever I don't feel lime picking up a book, I would go on Spotify, and YouTube to listen to
+            Whenever I don't feel like picking up a book, I would go on Spotify, and YouTube to listen to
             podcasts that suit my interests and/or mood for that particular day of the week.
           </p>
           <p>
