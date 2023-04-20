@@ -12,7 +12,6 @@ import PDF from "./Tuan_Resume_Stage.pdf";
 import Tilt from "react-parallax-tilt";
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
-const greetingTexts = ["Hi, thank you for visiting my website!", " with 4 years of experience working with a multitude of programming languages, software, and technologies.","Currently, I'm working towards my DEC in Computer Science, and I'm on track to graduate in May, 2023.", "          You can download a copy of my résumé below."]
 
 const IndexPage = () => {
   const onDownloadClick = () => {
