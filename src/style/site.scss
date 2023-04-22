@@ -53,10 +53,7 @@ body {
                 margin-bottom: 0;
             }
         }
-        .projectDetail {
-            display:flex;
-            max-height: max-content;
-        }
+        
        
         font-family: 'Sofia Sans';
     }
@@ -67,4 +64,6 @@ body {
         bottom: 0;
     }
 }
-
+.projectDetail {
+    display:flex;
+}

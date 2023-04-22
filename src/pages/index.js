@@ -1,15 +1,13 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import "../style/site.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import {MdCloudDownload} from "@react-icons/all-files/md/MdCloudDownload";
 import Typewriter from "typewriter-effect";
 import PDF from "./Tuan_Resume_Stage.pdf";
 import Tilt from "react-parallax-tilt";
+import Navbar from "../components/navbar";
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
 
@@ -31,44 +29,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <nav class="flex items-center sm:px-4 px-2 py-2.5">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
-              <li>
-                <Link to="/" class="block py-2 pl-3 pr-4 md:p-0">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/skills/" class="block py-2 pl-3 pr-4 md:p-0">
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects/" class="block py-2 pl-3 pr-4 md:p-0">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/anhtuannguyen14/">
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/vercheres">
-                  <FaGithub />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar/>
       <h1 class="font-black">PORTFOLIO</h1>
       <div class="flex flex-row mb-13 gap-4">
         <div>
@@ -102,7 +63,7 @@ const IndexPage = () => {
           <div className="myIntro">
             <p>
             <Typewriter onInit={(tw) => 
-              tw.typeString("Hello, welcome to my website!<br/>")
+              tw.typeString("Hey there! Welcome to my website!<br/>")
               .typeString("I am a CS student based in Saint-Lambert, Québec.<br/>")
               .typeString("Currently, I'm working towards getting my DEC in Computer Science.<br/>")
               .typeString("And I'm on track to graduate in May, 2023")
