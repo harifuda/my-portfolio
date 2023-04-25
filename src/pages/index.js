@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
 import PDF from "./Tuan_Resume_Stage.pdf";
 import Tilt from "react-parallax-tilt";
 import Navbar from "../components/navbar";
+import FadeIn from "react-fade-in";
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
 
@@ -32,6 +33,7 @@ const IndexPage = () => {
       <Navbar/>
       <h1 class="font-black">PORTFOLIO</h1>
       <div class="flex flex-row mb-13 gap-4">
+        <FadeIn>
         <div>
           <Tilt>
             <StaticImage
@@ -45,7 +47,9 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
+        </FadeIn>
         <div class="flex-col ml-10">
+          <FadeIn>
           <h3 class="font-black">
             <Typewriter
               options={{
@@ -60,6 +64,7 @@ const IndexPage = () => {
               options={{ strings: texts, autoStart: true, loop: true }}
             />
           </h4>
+          </FadeIn>
           <div className="myIntro">
             <p>
             <Typewriter onInit={(tw) => 

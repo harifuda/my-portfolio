@@ -1,12 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import "../style/site.scss";
 import { firestore } from "../utils/firebase";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { useState } from "react";
+import FadeIn from "react-fade-in";
 import Navbar from "../components/navbar";
 
 const ProjectPage = () => {
@@ -42,6 +40,7 @@ const ProjectPage = () => {
             projects.map((project) => {
               console.log(project);
               return (
+                <FadeIn>
                 <div className="projectCard">
                   <div class="space-x-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                     <img
@@ -82,6 +81,7 @@ const ProjectPage = () => {
                     </div>
                   </div>
                 </div>
+                </FadeIn>
               );
             })}
         </div>

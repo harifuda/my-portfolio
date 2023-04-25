@@ -9,6 +9,8 @@ import {
   buildStyles,
 } from "react-circular-progressbar";
 import { easeQuadInOut } from "d3-ease";
+import FadeIn from "react-fade-in";
+
 import "react-circular-progressbar/dist/styles.css";
 
 import Navbar from "../components/navbar";
@@ -40,6 +42,7 @@ const AboutPage = () => {
       </div>
       <div class="flex gap-7">
         {programmingData.map((item) => (
+          <FadeIn>
           <div
             class="flex flex-col justify-center"
             style={{ width: 150, height: 150 }}
@@ -71,6 +74,7 @@ const AboutPage = () => {
               <p class="text-center text-[20px] mt-3">{item.label}</p>
             </div>
           </div>
+          </FadeIn>
         ))}
       </div>
       <div class="mt-14 mb-14">
@@ -78,6 +82,7 @@ const AboutPage = () => {
       </div>
       <div class="flex gap-7">
         {languagesData.map((item) => (
+          <FadeIn>
           <div
             class="flex flex-col justify-center"
             style={{ width: 150, height: 150 }}
@@ -109,6 +114,7 @@ const AboutPage = () => {
               <p class="text-center text-[20px] mt-3">{item.label}</p>
             </div>
           </div>
+          </FadeIn>
         ))}
       </div>
     </Layout>

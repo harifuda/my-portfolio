@@ -19,29 +19,30 @@ const Navbar = () => {
 
   return (
     <>
-        <nav class="flex items-center sm:px-4 px-2 py-2.5">
-        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <nav>
+        <div class="container flex flex-wrap flex-col p-5 items-center justify-between max-w-screen-xl">
+          
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>
-                <Link to="/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/" class="block py-2 pl-3 pr-4 md:p-0">
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/skills/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/skills/" class="block py-2 pl-3 pr-4 md:p-0">
                   Skills
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/projects/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/projects/" class="block py-2 pl-3 pr-4 md:p-0">
                   Projects
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/contact/" class="block py-2 pl-3 pr-4 md:p-0">
                   Contact
-                </Link>
+                </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/anhtuannguyen14/">

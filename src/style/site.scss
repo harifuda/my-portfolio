@@ -1,9 +1,7 @@
 
-
+$maxTab: 768px;
 body {
-
     main {
-            position: static;
             top: 0;
             padding: 23px 0 0 100px;
 
@@ -34,7 +32,7 @@ body {
                 color: #0a9396;
                 font-weight: bold;
                 &:hover {
-                    color: #9d4edd;
+                    animation: fadeIn 1.2s;
                 }
             }
 
@@ -57,13 +55,14 @@ body {
        
         font-family: 'Sofia Sans';
     }
-    footer {
-        font-family: 'Sofia Sans'; 
-        position: fixed;
-        text-align: center;
-        bottom: 0;
-    }
+   
 }
 .projectDetail {
     display:flex;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
