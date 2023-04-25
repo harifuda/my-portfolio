@@ -54,6 +54,7 @@ const IndexPage = () => {
             <Typewriter
               options={{
                 strings: "Manh Anh Tuan, Nguyen",
+                delay: 5,
                 autoStart: true,
                 loop: false,
               }}
@@ -61,7 +62,7 @@ const IndexPage = () => {
           </h3>
           <h4 class="font-black">
             <Typewriter
-              options={{ strings: texts, autoStart: true, loop: true }}
+              options={{ strings: texts, autoStart: true, loop: true, delay: 15}}
             />
           </h4>
           </FadeIn>
@@ -101,6 +102,7 @@ const IndexPage = () => {
             <Typewriter
               options={{
                 strings: "Hobbies & Interests",
+                delay: 5,
                 autoStart: true,
                 loop: false,
               }}
@@ -110,6 +112,7 @@ const IndexPage = () => {
             <Typewriter
               options={{
                 strings: "Tabletop Games",
+                delay: 5,
                 autoStart: true,
                 loop: false,
               }}
