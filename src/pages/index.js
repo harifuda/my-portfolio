@@ -1,37 +1,19 @@
 import * as React from "react";
-import "../style/site.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 import {MdCloudDownload} from "@react-icons/all-files/md/MdCloudDownload";
 import Typewriter from "typewriter-effect";
-import PDF from "./Tuan_Resume_Stage.pdf";
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import Tilt from "react-parallax-tilt";
 import Navbar from "../components/navbar";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+import "../style/site.scss";
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
 
 const IndexPage = () => {
-  const onDownloadClick = () => {
-    fetch(PDF).then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = PDF;
-        alink.click();
-      });
-    });
-  };
 
   return (
     <Layout>
@@ -84,15 +66,6 @@ const IndexPage = () => {
             </p>
           </div>
           <br/>
-          <button
-            class="shadow bg-[#0081a7] hover:bg-[#029ecc] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded inline-flex items-center"
-            onClick={onDownloadClick}
-          >
-            <svg class="fill-current w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <MdCloudDownload/>
-            </svg>
-            <span>Résumé</span>
-          </button>
         </div>
         </Fade>
       </div>

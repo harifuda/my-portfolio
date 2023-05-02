@@ -46,6 +46,11 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
+                <a href="/resume/" class="block py-2 pl-3 pr-4 md:p-0">
+                  Resume
+                </a>
+              </li>
+              <li>
                 <a href="https://www.linkedin.com/in/anhtuannguyen14/">
                   <FaLinkedin />
                 </a>

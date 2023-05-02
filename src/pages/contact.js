@@ -1,12 +1,8 @@
 import * as React from "react";
 import { useState } from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import "../style/site.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import Navbar from "../components/navbar";
 
 const ContactPage = () => {

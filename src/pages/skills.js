@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import "../style/site.scss";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
