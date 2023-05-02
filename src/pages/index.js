@@ -6,9 +6,15 @@ import { StaticImage } from "gatsby-plugin-image";
 import {MdCloudDownload} from "@react-icons/all-files/md/MdCloudDownload";
 import Typewriter from "typewriter-effect";
 import PDF from "./Tuan_Resume_Stage.pdf";
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import Tilt from "react-parallax-tilt";
 import Navbar from "../components/navbar";
-import FadeIn from "react-fade-in";
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
+
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
 
@@ -33,7 +39,7 @@ const IndexPage = () => {
       <Navbar/>
       <h1 class="font-black">PORTFOLIO</h1>
       <div class="flex flex-row mb-13 gap-4">
-        <FadeIn>
+        <Fade>
         <div>
           <Tilt>
             <StaticImage
@@ -47,9 +53,9 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
-        </FadeIn>
+        </Fade>
+        <Fade>
         <div class="flex-col ml-10">
-          <FadeIn>
           <h3 class="font-black">
             <Typewriter
               options={{
@@ -65,21 +71,16 @@ const IndexPage = () => {
               options={{ strings: texts, autoStart: true, loop: true, delay: 15}}
             />
           </h4>
-          </FadeIn>
+
           <div className="myIntro">
             <p>
-            <Typewriter onInit={(tw) => 
-              tw.typeString("Hey there! Welcome to my website!<br/>")
-              .typeString("I am a CS student based in Saint-Lambert, Québec.<br/>")
-              .typeString("Currently, I'm working towards getting my DEC in Computer Science.<br/>")
-              .typeString("And I'm on track to graduate in May, 2023")
-              .pauseFor(2500)
-              .callFunction(() => {
-                console.log("Typed out strings!");
-              })
-              .start()
-            }
-          />
+
+            <Typewriter options={{
+              strings: "Hey there! Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/> And I'm on track to graduate in May, 2023.",
+              autoStart: true,
+              delay: 5,
+              loop: false,
+            }}/>
             </p>
           </div>
           <br/>
@@ -93,20 +94,16 @@ const IndexPage = () => {
             <span>Résumé</span>
           </button>
         </div>
+        </Fade>
       </div>
       <br />
       <br />
       <div class="flex flex-row mt-10 gap-4">
+        <Slide left>
         <div class="flex-col">
+          
           <h3 class="font-black">
-            <Typewriter
-              options={{
-                strings: "Hobbies & Interests",
-                delay: 5,
-                autoStart: true,
-                loop: false,
-              }}
-            />
+            Hobbies & Interests
           </h3>
           <h4 class="font-black">
             <Typewriter
@@ -144,10 +141,13 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
+        </Slide>
       </div>
       <br />
       <br />
+
       <div class="flex flex-row mb-13 gap-4">
+        <Slide right>
         <div>
           <Tilt>
             <StaticImage
@@ -175,6 +175,7 @@ const IndexPage = () => {
             I find listening to podcasts as a whole therapeutic, as it helps to wind down my mind and, at the same time, spark my creativity.
           </p>
         </div>
+      </Slide>
       </div>
     </Layout>
   );
