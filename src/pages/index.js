@@ -22,7 +22,7 @@ const IndexPage = () => {
       <h1 class="font-black">PORTFOLIO</h1>
       <div class="flex flex-row mb-13 gap-4">
         <Fade right>
-        <div>
+        <div class="flex flex-col">
           <Tilt>
             <StaticImage
               src="../images/photo.jpg"
