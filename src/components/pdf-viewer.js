@@ -13,7 +13,7 @@ const PDFViewer = () => {
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
       <div
         style={{
-          height: "1440px",
+          maxHeight: "1440px",
           maxWidth: "1200px",
           marginLeft: "auto",
           marginRight: "auto"

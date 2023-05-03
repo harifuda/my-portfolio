@@ -21,7 +21,7 @@ const IndexPage = () => {
       <Navbar/>
       <h1 class="font-black">PORTFOLIO</h1>
       <div class="flex flex-row mb-13 gap-4">
-        <Fade>
+        <Fade right>
         <div>
           <Tilt>
             <StaticImage
@@ -35,8 +35,7 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
-        </Fade>
-        <Fade>
+
         <div class="flex-col ml-10">
           <h3 class="font-black">
             <Typewriter
@@ -50,7 +49,7 @@ const IndexPage = () => {
           </h3>
           <h4 class="font-black">
             <Typewriter
-              options={{ strings: texts, autoStart: true, loop: true, delay: 15}}
+              options={{ strings: texts, autoStart: true, loop: true, delay: 20}}
             />
           </h4>
 
@@ -72,7 +71,7 @@ const IndexPage = () => {
       <br />
       <br />
       <div class="flex flex-row mt-10 gap-4">
-        <Slide left>
+        <Fade left>
         <div class="flex-col">
           
           <h3 class="font-black">
@@ -114,13 +113,13 @@ const IndexPage = () => {
             />
           </Tilt>
         </div>
-        </Slide>
+        </Fade>
       </div>
       <br />
       <br />
 
       <div class="flex flex-row mb-13 gap-4">
-        <Slide right>
+        <Fade right>
         <div>
           <Tilt>
             <StaticImage
@@ -148,7 +147,7 @@ const IndexPage = () => {
             I find listening to podcasts as a whole therapeutic, as it helps to wind down my mind and, at the same time, spark my creativity.
           </p>
         </div>
-      </Slide>
+      </Fade>
       </div>
     </Layout>
   );

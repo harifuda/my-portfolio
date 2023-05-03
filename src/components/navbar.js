@@ -26,37 +26,37 @@ const Navbar = () => {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>
-                <a href="/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/" class="block py-2 pl-3 pr-4">
                   Home
                 </a>
               </li>
               <li>
-                <a href="/skills/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/skills/" class="block py-2 pl-3 pr-4">
                   Skills
                 </a>
               </li>
               <li>
-                <a href="/projects/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/projects/" class="block py-2 pl-3 pr-4">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="/contact/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/contact/" class="block py-2 pl-3 pr-4">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="/resume/" class="block py-2 pl-3 pr-4 md:p-0">
+                <a href="/resume/" class="block py-2 pl-3 pr-4">
                   Resume
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/anhtuannguyen14/">
+                <a href="https://www.linkedin.com/in/anhtuannguyen14/" class="block py-2 pl-3 pr-4">
                   <FaLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/vercheres">
+                <a href="https://github.com/vercheres" class="block py-2 pl-3 pr-4">
                   <FaGithub />
                 </a>
               </li>

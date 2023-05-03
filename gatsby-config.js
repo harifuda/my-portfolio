@@ -5,7 +5,7 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    siteUrl: `https://hathena-portfolio.vercel.app`,
+    siteUrl: `https://hathenac.vercel.app`,
     description: `My personal web portfolio`,
     author:`Tuan`,
   },
