@@ -70,7 +70,7 @@ const IndexPage = () => {
       </div>
       <br />
       <br />
-      <div class="flex flex-row mt-10 gap-4">
+      <div class="flex flex-row mt-10 mr-10 gap-4">
         <Fade left>
         <div class="flex-col">
           
@@ -118,7 +118,7 @@ const IndexPage = () => {
       <br />
       <br />
 
-      <div class="flex flex-row mb-13 gap-4">
+      <div class="flex flex-row mb-13 mr-10 gap-4">
         <Fade right>
         <div>
           <Tilt>
