@@ -20,43 +20,43 @@ const Navbar = () => {
 
   return (
     <>
-        <nav>
-        <div class="container flex flex-wrap flex-col p-5 items-center justify-between max-w-screen-xl">
+        <nav className="navbar">
+        <div className="container" class="flex flex-wrap flex-col p-5 items-center justify-between max-w-screen-xl">
           
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div class="w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>
-                <a href="/" class="block py-2 pl-3 pr-4">
+                <Link to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/skills/" class="block py-2 pl-3 pr-4">
+                <Link to="/skills/">
                   Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/projects/" class="block py-2 pl-3 pr-4">
+                <Link to="/projects/">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact/" class="block py-2 pl-3 pr-4">
+                <Link to="/contact/">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/resume/" class="block py-2 pl-3 pr-4">
+                <Link to="/resume/">
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/anhtuannguyen14/" class="block py-2 pl-3 pr-4">
+                <a href="https://www.linkedin.com/in/anhtuannguyen14/">
                   <FaLinkedin />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/vercheres" class="block py-2 pl-3 pr-4">
+                <a href="https://github.com/vercheres">
                   <FaGithub />
                 </a>
               </li>

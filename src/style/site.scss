@@ -32,6 +32,11 @@ body {
                 color: #0a9396;
                 font-weight: bold;
                 font-size: 20.3px;
+                display: block;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 3px;
+                padding-right: 4px;
                 &:hover {
                     animation: fadeIn 1.2s;
                 }
