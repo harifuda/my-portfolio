@@ -2,16 +2,14 @@ import * as React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
-import {MdCloudDownload} from "@react-icons/all-files/md/MdCloudDownload";
 import Typewriter from "typewriter-effect";
 import Tilt from "react-parallax-tilt";
 import Navbar from "../components/navbar";
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 
 import "../style/site.scss";
 
-const texts = ["INTERN @ SERTI KEYLOOP", "CS STUDENT @ CÉGÉP CHAMPLAIN"];
+const texts = ["COMPUTER SCIENCE STUDENT", "JUNIOR DEVELOPER", ""];
 
 const IndexPage = () => {
 
@@ -54,10 +52,9 @@ const IndexPage = () => {
           </h4>
 
           <div className="myIntro">
-            <p>
-
+            <p className="myIntroText"> 
             <Typewriter options={{
-              strings: "Hey there! Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/> And I'm on track to graduate in May, 2023.",
+              strings: "Hey there! Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to MongoDB, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero.",
               autoStart: true,
               delay: 5,
               loop: false,

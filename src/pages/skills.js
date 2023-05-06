@@ -42,7 +42,7 @@ const AboutPage = () => {
       </div>
       <div class="flex gap-7">
         {programmingData.map((item) => (
-          <Fade up>
+          <Fade>
           <div
             class="flex flex-col justify-center"
             style={{ width: 150, height: 150 }}
