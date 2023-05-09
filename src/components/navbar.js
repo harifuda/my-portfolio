@@ -23,7 +23,10 @@ const Navbar = () => {
     <>
     <header class="flex flex-col items-center justify-between max-w-screen-xl">
         <nav className="navbar">
-          <div class="w-full md:block md:w-auto" id="navbar-default">
+          <button>
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>
                 <Link to="/">

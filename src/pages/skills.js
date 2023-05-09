@@ -68,15 +68,15 @@ const AboutPage = () => {
                         textColor: "#1b4332",
                       })}
                     >
-                        <div className="label">
-                          <p class="flex flex-col text-center text-[14px] mt-3">{item.label}</p>
-                        </div>
+                        
                     </CircularProgressbarWithChildren>
                   );
                 }}
               </AnimatedProgressProvider>
             </div>
-           
+            <div className="label">
+              <p class="flex flex-col text-center text-[14px] mt-3">{item.label}</p>
+            </div>
           </div>
           </Fade>
         ))}
@@ -111,15 +111,15 @@ const AboutPage = () => {
                         textColor: "#1b4332",
                       })}
                     >
-                      <div>
-                        <p class="text-center text-[14px] mt-3">{item.label}</p>
-                      </div>
+                      
                     </CircularProgressbarWithChildren>
                   );
                 }}
               </AnimatedProgressProvider>
             </div>
-            
+            <div>
+              <p class="text-center text-[14px] mt-3">{item.label}</p>
+            </div>
           </div>
           </Fade>
         ))}
