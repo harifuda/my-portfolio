@@ -23,7 +23,7 @@ const IndexPage = () => {
         <div class="flex flex-col">
           <Tilt>
             <StaticImage
-              src="../images/portfolio.jpg"
+              src="../images/portfolio.png"
               class="rounded-lg drop-shadow-3xl"
               layout="constrained"
               alt="portrait"
