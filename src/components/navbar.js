@@ -23,10 +23,13 @@ const Navbar = () => {
   return (
     <>
     <header class="flex flex-col items-center justify-between max-w-screen-xl">
-        <nav className="navbar">
-          <button>
-            <span class="sr-only">Menu</span>
-          </button>
+        <nav>
+          <section className="ham-mobile flex lg:hidden">
+            <div className="ham-toggle space-y-2" onClick={() => setIsNavOpen((prev) => !prev)}>
+              
+            </div>
+          </section>
+          
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>

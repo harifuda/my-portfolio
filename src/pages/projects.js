@@ -53,12 +53,14 @@ const ProjectPage = () => {
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                         {project.name}
                       </h5>
-                      <p class="mb-3 font-normal text-gray-700">
+                      <span class="mb-3 font-normal text-gray-700">
                         {project.description}
-                      </p>
-                      <p class="mb-5 font-normal text-gray-300">
+                      </span>
+                      <br/>
+                      <span class="mb-5 font-normal text-gray-300">
                         Technologies: {project.technologies}
-                      </p>
+                      </span>
+                      <br/>
                       <a
                         href={project.link}
                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#8338ec] rounded-lg hover:bg-blue-800"
