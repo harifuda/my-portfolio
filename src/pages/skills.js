@@ -56,26 +56,29 @@ const AboutPage = () => {
               >
                 {(value) => {
                   const rounded = Math.round(value);
+                  console.log(value);
                   return (
                     <CircularProgressbarWithChildren
                       value={rounded}
                       text={`${rounded}%`}
                       class="flex flex-col"
                       styles={buildStyles({
-                        textSize: "14px",
+                        textSize: "15px",
                         pathColor: "#06d6a0",
-                        trailColor: "#c1e6dc",
+                        trailColor: "#ffffff",
                         textColor: "#1b4332",
                       })}
                     >
-                        
+                        <div>
+                          <span class="flex flex-col text-center text-[15px] mt-14">{item.label}</span>
+                        </div>
                     </CircularProgressbarWithChildren>
                   );
                 }}
               </AnimatedProgressProvider>
             </div>
             <div className="label">
-              <p class="flex flex-col text-center text-[14px] mt-3">{item.label}</p>
+            
             </div>
           </div>
           </Fade>
@@ -105,20 +108,19 @@ const AboutPage = () => {
                       value={rounded}
                       text={`${rounded}%`}
                       styles={buildStyles({
-                        textSize: "14px",
+                        textSize: "15px",
                         pathColor: "#06d6a0",
-                        trailColor: "#c1e6dc",
+                        trailColor: "#ffffff",
                         textColor: "#1b4332",
                       })}
                     >
-                      
+                      <div>
+                          <span class="flex flex-col text-center text-[15px] mt-14">{item.label}</span>
+                      </div>
                     </CircularProgressbarWithChildren>
                   );
                 }}
               </AnimatedProgressProvider>
-            </div>
-            <div>
-              <p class="text-center text-[14px] mt-3">{item.label}</p>
             </div>
           </div>
           </Fade>

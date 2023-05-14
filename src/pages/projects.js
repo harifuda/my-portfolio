@@ -42,7 +42,7 @@ const ProjectPage = () => {
               return (
                 <Fade right>
                 <div className="projectCard">
-                  <div class="space-x-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                  <div class="space-x-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                     <img
                       class="rounded-t-lg"
                       src={project.screenshot}
