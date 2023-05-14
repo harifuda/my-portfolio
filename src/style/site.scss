@@ -1,15 +1,12 @@
 
 
 
-body {
     main {
-            top: 0;
             padding: 23px 0 0 100px;
-
+            display: block;
             h1{
-                font-size:47.3px;
+                font-size: 35px;
                 color: #40916c;
-                margin-bottom: 0;
             }
 
             h2, h3 {
@@ -20,7 +17,6 @@ body {
             h4 {
                 font-size: 28px;
                 color: #1b4332;
-                margin-bottom: 0;
             }
 
             p{
@@ -57,7 +53,7 @@ body {
         font-family: 'Sofia Sans';
     }
    
-}
+
 .projectDetail {
     display:flex;
 }
