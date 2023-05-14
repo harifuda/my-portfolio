@@ -23,7 +23,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>
+      <div style={{
+          margin: `0 auto`,
+         
+        }}>
         <main>{children}</main>
 
       
