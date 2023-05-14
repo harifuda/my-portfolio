@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby";
+
 import { useStaticQuery, graphql } from "gatsby"
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
