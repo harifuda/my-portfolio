@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 import "../style/site.scss";
 
-const texts = ["COMPUTER SCIENCE STUDENT", "JUNIOR DEVELOPER", ""];
+const texts = ["COMPUTER SCIENCE STUDENT", "JUNIOR DEVELOPER", "INTERN @ SERTI"];
 
 const IndexPage = () => {
 
@@ -55,7 +55,7 @@ const IndexPage = () => {
           <div className="myIntro">
             <p className="myIntroText"> 
             <Typewriter options={{
-              strings: "Hey there! Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero.",
+              strings: "Hey there!👋 Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero.",
               autoStart: true,
               delay: 5,
               loop: false,

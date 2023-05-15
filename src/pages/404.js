@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../style/site.scss";
 
-const IndexPage = () => {
+const ErrorPage = () => {
   return (
     <main>
       <div className="errorM">
@@ -11,6 +11,6 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default ErrorPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>404</title>;
