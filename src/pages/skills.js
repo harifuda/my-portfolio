@@ -34,9 +34,8 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <Navbar/>
-
-      <h1 class="font-black">SKILLS</h1>
-
+      <br/>
+      <br/>
       <div class="my-8 mb-14">
         <h4 class="font-black">My technical skills</h4>
       </div>

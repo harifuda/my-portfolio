@@ -17,7 +17,8 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Navbar/>
-      <h1 class="font-black">PORTFOLIO</h1>
+      <br/>
+      <br/>
       <div class="flex flex-row mb-13 gap-4">
         <Fade right>
         <div class="flex flex-col">
@@ -37,14 +38,7 @@ const IndexPage = () => {
 
         <div class="flex-col ml-10">
           <h3 class="font-black">
-            <Typewriter
-              options={{
-                strings: "Manh Anh Tuan, Nguyen",
-                delay: 5,
-                autoStart: true,
-                loop: false,
-              }}
-            />
+            Manh Anh Tuan, Nguyen <span class="wave">👋</span>
           </h3>
           <h4 class="font-black">
             <Typewriter
@@ -55,7 +49,7 @@ const IndexPage = () => {
           <div className="myIntro">
             <p className="myIntroText"> 
             <Typewriter options={{
-              strings: "Hey there!👋 Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero.",
+              strings: "Hey there! Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero.",
               autoStart: true,
               delay: 5,
               loop: false,

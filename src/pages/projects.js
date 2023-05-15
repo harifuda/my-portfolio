@@ -30,7 +30,8 @@ const ProjectPage = () => {
     <Layout>
       <SEO title="projects" />
       <Navbar/>
-      <h1 class="font-black">PROJECTS</h1>
+      <br/>
+      <br/>
       <p>
         Here are some projects that I worked on/have been a part of in the past.
       </p>
