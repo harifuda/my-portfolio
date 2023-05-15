@@ -10,6 +10,8 @@ import '../style/site.scss'
 
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const handleClick = () => setIsNavOpen(!isNavOpen);
+
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -23,10 +25,7 @@ const Navbar = () => {
   return (
     <>
     <header class="flex flex-col items-center justify-between max-w-screen-xl">
-        <nav>
-          <div>
-            
-          </div>
+
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
               <li>
@@ -66,7 +65,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </nav>
       </header>
     </>
   )
