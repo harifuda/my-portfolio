@@ -9,7 +9,7 @@ import Fade from "react-reveal/Fade";
 
 import "../style/site.scss";
 
-const texts = ["COMPUTER SCIENCE STUDENT", "JUNIOR DEVELOPER", "INTERN @ SERTI KEYLOOP"];
+const texts = ["COMPUTER SCIENCE STUDENT", "JUNIOR DEVELOPER", "IT SPECIALIST"];
 
 const IndexPage = () => {
 
