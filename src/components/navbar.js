@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/resume/">
-                  Resume
+                  Résumé
                 </Link>
               </li>
               <li>
