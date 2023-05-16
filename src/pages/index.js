@@ -49,7 +49,7 @@ const IndexPage = () => {
           <div className="myIntro">
             <p className="myIntroText"> 
             <Typewriter options={{
-              strings: "Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved throughout the years: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero. ",
+              strings: "Welcome to my website!<br/> I am a CS student based in Saint-Lambert, Québec.<br/> Currently, I'm working towards getting my DEC in Computer Science.<br/><br/> I've always been fascinated with how far technology has evolved throughout the years: from <i><a href=\"https://www.maa.org/press/periodicals/convergence/mathematical-treasure-ishango-bone\">Ishango bones</a></i> to NoSQL, from the first ever autonomous chess machine: <i><a href=\"https://www.chessprogramming.org/El_Ajedrecista\">El Ajedrecista<a></i> to AlphaZero. <br/><br/> Always eager to further broaden my skillset and I always love to seek new challenges as I navigate through the industry.",
               autoStart: true,
               delay: 5,
               loop: false,
