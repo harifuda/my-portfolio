@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Navbar from "../components/navbar";
-import PDF from "../assets/Tuan_Resume_Stage.pdf";
+import PDF from "../assets/My CV.pdf";
 
 import "../style/site.scss";
 import '@react-pdf-viewer/core/lib/styles/index.css';
