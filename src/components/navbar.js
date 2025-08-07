@@ -59,7 +59,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/vercheres">
+                <a href="https://github.com/harifuda/">
                   <FaGithub />
                 </a>
               </li>
