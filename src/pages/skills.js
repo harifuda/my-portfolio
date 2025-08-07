@@ -20,8 +20,8 @@ const AboutPage = () => {
     { completed: 83, label: "Docker" },
     { completed: 86, label: "Python" },
     { completed: 89, label: "Java" },
-    { completed: 83, label: "React" },
-    { completed: 78, label: "C#" },
+    { completed: 83, label: "ReacJS" },
+    { completed: 80, label: "C#" },
     { completed: 80, label: "HTML & CSS" },
   ];
 
@@ -37,7 +37,7 @@ const AboutPage = () => {
       <br/>
       <br/>
       <div class="my-8 mb-14">
-        <h4 class="font-black">My technical skills</h4>
+        <h4 class="font-black">Technical Skills</h4>
       </div>
       <div class="flex gap-7">
         {programmingData.map((item) => (
